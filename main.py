@@ -1,7 +1,7 @@
 from snake import Snake
 from turtle import Screen
 from scoreboard import Scoreboard
-from MainScreen import Border
+from border import Border
 import time
 from food import Food
 # set up the screen
