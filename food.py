@@ -1,5 +1,7 @@
 import random
 from turtle import Turtle
+
+
 class Food(Turtle):
 
     def __init__(self):
@@ -15,3 +17,13 @@ class Food(Turtle):
         random_x = random.randint(-280, 280)
         random_y = random.randint(-280, 280)
         self.goto(random_x, random_y)
+
+    def bonus_point(self):
+
+        self.shapesize(stretch_len=1, stretch_wid=1)
+        self.color("red")
+
+    def normal_point(self):
+
+        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+        self.color("blue")
